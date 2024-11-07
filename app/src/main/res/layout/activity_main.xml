@@ -38,9 +38,9 @@
     <!-- Researcher TextView -->
     <TextView
         android:id="@+id/txtResearcher"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Researcher"
+        android:layout_width="126dp"
+        android:layout_height="67dp"
+        android:text="Macroeconomic Researcher"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imgResearcher"
@@ -96,8 +96,10 @@
         android:id="@+id/btnMacroEconomy"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#386641"
+        android:backgroundTint="#04A1FF"
         android:text="Macro Economy"
+        android:textSize="12sp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnAgriculture"
         app:layout_constraintBottom_toBottomOf="parent" />
@@ -106,20 +108,27 @@
         android:id="@+id/btnAgriculture"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#6a994e"
         android:text="Agriculture"
+        android:textSize="11sp"
+        android:backgroundTint="#04A1FF"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintStart_toEndOf="@+id/btnMacroEconomy"
         app:layout_constraintEnd_toStartOf="@+id/btnDebit"
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <Button
         android:id="@+id/btnDebit"
-        android:layout_width="143dp"
-        android:layout_height="54dp"
-        android:backgroundTint="#a7c957"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Trade"
+        android:textSize="14sp"
+        android:backgroundTint="#04A1FF"
+        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnAgriculture" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -100,7 +100,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="#400C42"
+        android:backgroundTint="#04A1FF"
         android:text="Add" />
 
 </RelativeLayout>
