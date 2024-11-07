@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Researcher ImageView -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:text="Macroeconomic Dashboard"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgResearcher"
+        android:layout_width="78dp"
+        android:layout_height="82dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintEnd_toStartOf="@+id/imgGovernmentOfficial"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:tint="#8B4513" />
+
+    <!-- Researcher TextView -->
+    <TextView
+        android:id="@+id/txtResearcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Researcher"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgResearcher"
+        app:layout_constraintStart_toStartOf="@+id/imgResearcher"
+        app:layout_constraintTop_toBottomOf="@+id/imgResearcher" />
+
+    <!-- Government Official ImageView -->
+    <ImageView
+        android:id="@+id/imgGovernmentOfficial"
+        android:layout_width="78dp"
+        android:layout_height="82dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgResearcher"
+        app:layout_constraintTop_toTopOf="@+id/imgResearcher"
+        app:tint="#0000FF"/>
+
+    <!-- Government Official TextView -->
+    <TextView
+        android:id="@+id/txtGovernmentOfficial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Government Official"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgGovernmentOfficial"
+        app:layout_constraintStart_toStartOf="@+id/imgGovernmentOfficial"
+        app:layout_constraintTop_toBottomOf="@+id/imgGovernmentOfficial" />
+
+    <!-- ChatGPT Button -->
+
+    <!-- Row of 3 Buttons at the Bottom -->
+
+
+    <Button
+        android:id="@+id/btnOpenChatGPT"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/circle_background"
+        android:text="ChatGPT"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGovernmentOfficial" />
+
+
+    <Button
+        android:id="@+id/btnMacroEconomy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#386641"
+        android:text="Macro Economy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAgriculture"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/btnAgriculture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6a994e"
+        android:text="Agriculture"
+        app:layout_constraintStart_toEndOf="@+id/btnMacroEconomy"
+        app:layout_constraintEnd_toStartOf="@+id/btnDebit"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/btnDebit"
+        android:layout_width="143dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#a7c957"
+        android:text="Trade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAgriculture" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CMPE-277 Hackathon App</string>
+        <string name="dashboard_title">Macroeconomic Dashboard</string>
+        <string name="researcher">Researcher</string>
+        <string name="government_official">Government Official</string>
+        <string name="macro_economy">Macro Economy</string>
+        <string name="agriculture">Agriculture</string>
+        <string name="trade">Trade</string>
+        <string name="chatgpt">ChatGPT</string>
+
+</resources>
