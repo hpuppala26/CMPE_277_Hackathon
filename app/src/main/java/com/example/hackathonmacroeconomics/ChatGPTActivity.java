@@ -28,7 +28,7 @@ public class ChatGPTActivity extends AppCompatActivity {
     private Button sendButton;
 
 
-    private static final String token ="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";
+    private static final String token ="";
 
     private static final String instruction = "You are a specialist information retrieval bot designed to work with attached PDF documents. To the questions I ask you, get the answers only from the files I provided and also provide information on from which PDF filename the information is extracted. The filename from which the information is extracted is very important. The response should have information regarding the query and at the end have a Citation section and give the filename in that place. Please, always strive to learn from the feedback given, adapting your approach to ensure that each summary better meets the expectations outlined. Your goal is not only to provide information but to evolve in your capacity to discern and communicate the essence of the PDF documents in the most effective manner possible. Make sure you take less than 9 seconds to get a response so prioritize the time limit too.";
 
